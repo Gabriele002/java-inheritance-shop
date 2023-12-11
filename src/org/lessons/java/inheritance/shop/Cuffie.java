@@ -35,10 +35,15 @@ public class Cuffie extends Product{
 
     @Override
     public String toString() {
-        return "Cuffie{" +
-                "color='" + color + '\'' +
-                ", cablate=" + cablate +
-                '}';
+        return "Tv :\n" +
+                "code=" + super.getCode() + "\n" +
+                "name=" + super.getName() + '\'' + "\n" +
+                "description=" + super.getDescription() + '\'' + "\n" +
+                "price=" + super.getPrice() + "\n" +
+                "vat=" + super.getVat() + " " + "\n" +
+                "pollici=" + color + "\n" +
+                "smart=" + cablate + "\n" +
+                "-------------------------------------" + "\n" ;
     }
 
 }

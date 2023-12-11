@@ -37,12 +37,19 @@ public class Tv extends Product{
     //METTODI
 
 
+
+
     @Override
     public String toString() {
-        return "Tv{" +
-                "pollici=" + pollici +
-                ", smart=" + smart +
-                '}';
+        return "Tv :\n" +
+                "code=" + super.getCode() + "\n" +
+                "name=" + super.getName() + '\'' + "\n" +
+                "description=" + super.getDescription() + '\'' + "\n" +
+                "price=" + super.getPrice() + "\n" +
+                "vat=" + super.getVat() + " " + "\n" +
+                "pollici=" + pollici + "\n" +
+                "smart=" + smart + "\n" +
+                "-------------------------------------" + "\n" ;
     }
 
 
