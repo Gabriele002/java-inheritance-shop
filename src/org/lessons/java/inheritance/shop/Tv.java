@@ -3,8 +3,8 @@ package org.lessons.java.inheritance.shop;
 import java.math.BigDecimal;
 
 public class Tv extends Product{
-    int pollici;
-    boolean smart;
+    private int pollici;
+    private boolean smart;
 
     //COSTRUTTORI
 
@@ -35,4 +35,15 @@ public class Tv extends Product{
 
 
     //METTODI
+
+
+    @Override
+    public String toString() {
+        return "Tv{" +
+                "pollici=" + pollici +
+                ", smart=" + smart +
+                '}';
+    }
+
+
 }

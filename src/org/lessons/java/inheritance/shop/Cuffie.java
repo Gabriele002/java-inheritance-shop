@@ -16,25 +16,29 @@ public class Cuffie extends Product{
         this.cablate = cablate;
     }
 
-
     //GETTER E SETTER
-
     public String getColor() {
         return color;
     }
-
     public void setColor(String color) {
         this.color = color;
     }
-
     public boolean isCablate() {
         return cablate;
     }
-
     public void setCablate(boolean cablate) {
         this.cablate = cablate;
     }
 
-
     //METODI
+
+
+    @Override
+    public String toString() {
+        return "Cuffie{" +
+                "color='" + color + '\'' +
+                ", cablate=" + cablate +
+                '}';
+    }
+
 }

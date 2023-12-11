@@ -1,6 +1,7 @@
 package org.lessons.java.inheritance.shop;
 
 import java.math.BigDecimal;
+import java.util.Random;
 
 public class Smartphone extends Product{
     //ATRIBBUTI
@@ -9,10 +10,11 @@ public class Smartphone extends Product{
 
     //COSTRUTTORI
 
-    public Smartphone(String name, String description, BigDecimal price, BigDecimal vat, int memoria, int codiceImei) throws IllegalArgumentException {
+    public Smartphone(String name, String description, BigDecimal price, BigDecimal vat, int memoria) throws IllegalArgumentException {
         super(name, description, price, vat);
+        codiceImei = generateCode();
         this.memoria = memoria;
-        this.codiceImei = codiceImei;
+
     }
 
     //GETTER E SETTTER
@@ -36,6 +38,16 @@ public class Smartphone extends Product{
 
     //METODI
 
+    private int generateCode(){
+        Random randomGenerator = new Random();
+        return randomGenerator.nextInt(0, 10000);
+    }
 
-
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "memoria=" + memoria +
+                ", codiceImei=" + codiceImei +
+                '}';
+    }
 }

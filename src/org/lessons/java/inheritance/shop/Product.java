@@ -10,18 +10,10 @@ public class Product {
     private int code;
     private String name;
     private String description;
-
     private BigDecimal price;
     private BigDecimal vat;
 
-
-
-
     // COSTRUTTORI
-    public Product(){
-        this.code = generateCode();
-    }
-
     public Product(String name, String description, BigDecimal price, BigDecimal vat) throws IllegalArgumentException{
         validateName(name);
         validatePrice(price);
