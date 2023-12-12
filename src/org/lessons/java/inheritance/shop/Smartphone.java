@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class Smartphone extends Product{
     //ATRIBBUTI
-    int memoria;
-    int codiceImei;
+    private int memoria;
+    private int codiceImei;
 
     //COSTRUTTORI
 
@@ -45,14 +45,13 @@ public class Smartphone extends Product{
 
     @Override
     public String toString() {
-        return "Tv :\n" +
+        return "Smartphone :\n" +
                 "code=" + super.getCode() + "\n" +
                 "name=" + super.getName() + '\'' + "\n" +
                 "description=" + super.getDescription() + '\'' + "\n" +
                 "price=" + super.getPrice() + "\n" +
                 "vat=" + super.getVat() + " " + "\n" +
                 "pollici=" + memoria + "\n" +
-                "smart=" + codiceImei + "\n" +
-                "-------------------------------------" + "\n" ;
+                "smart=" + codiceImei + "\n";
     }
 }

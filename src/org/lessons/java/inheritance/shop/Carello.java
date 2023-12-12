@@ -186,8 +186,13 @@ public class Carello {
         }
 
 
-
-        System.out.println(carello.toString());
+        for (int i = 0; i < carello.size() ; i++) {
+            System.out.println(carello.toString());
+            for (int j = 0; j < 50; j++) {
+                System.out.print("-");
+            }
+            System.out.println();
+        }
 
 
 

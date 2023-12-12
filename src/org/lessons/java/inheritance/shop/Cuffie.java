@@ -5,8 +5,8 @@ import java.math.BigDecimal;
 public class Cuffie extends Product{
 
     //ATTRIBUTI
-    String color;
-    boolean cablate;
+    private String color;
+    private boolean cablate;
 
     //COSTRUTTORI
 
@@ -35,15 +35,14 @@ public class Cuffie extends Product{
 
     @Override
     public String toString() {
-        return "Tv :\n" +
+        return "Cuffie :\n" +
                 "code=" + super.getCode() + "\n" +
                 "name=" + super.getName() + '\'' + "\n" +
                 "description=" + super.getDescription() + '\'' + "\n" +
                 "price=" + super.getPrice() + "\n" +
                 "vat=" + super.getVat() + " " + "\n" +
                 "pollici=" + color + "\n" +
-                "smart=" + cablate + "\n" +
-                "-------------------------------------" + "\n" ;
+                "smart=" + cablate + "\n";
     }
 
 }

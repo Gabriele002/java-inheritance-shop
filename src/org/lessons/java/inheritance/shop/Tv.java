@@ -48,8 +48,8 @@ public class Tv extends Product{
                 "price=" + super.getPrice() + "\n" +
                 "vat=" + super.getVat() + " " + "\n" +
                 "pollici=" + pollici + "\n" +
-                "smart=" + smart + "\n" +
-                "-------------------------------------" + "\n" ;
+                "smart=" + smart + "\n";
+
     }
 
 
